@@ -4,12 +4,13 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/robotstadium/protos/RobotstadiumSoccerField.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/RobocupSoccerBall.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.23698527970644626 0.6586236284543207 0.7141798745723111 0.9334117529205836
-  position -2.0127659720710245 -1.650447356391666 2.096857972416679
+  orientation -0.24013898744679416 0.7236836114644177 0.6470048664468033 0.9477911177439292
+  position -2.1058699502924796 -1.6125313486449007 2.783477014644436
 }
 TexturedBackground {
 }
@@ -18,4 +19,19 @@ TexturedBackgroundLight {
 RobotstadiumSoccerField {
 }
 E-puck {
+}
+RobocupSoccerBall {
+  translation 0.56 -0.07 0.05
+}
+RobocupSoccerBall {
+  translation 0.3 -0.38 0.05
+  name "robocup soccer ball(1)"
+}
+RobocupSoccerBall {
+  translation 0.16 0.3 0.05
+  name "robocup soccer ball(3)"
+}
+RobocupSoccerBall {
+  translation 0.41 0.22 0.05
+  name "robocup soccer ball(2)"
 }
