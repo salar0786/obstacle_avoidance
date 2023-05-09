@@ -4,12 +4,13 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/robotstadium/protos/RobotstadiumSoccerField.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/balls/protos/RobocupSoccerBall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/sony/qrio/protos/QRIO.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.24013898744679416 0.7236836114644177 0.6470048664468033 0.9477911177439292
-  position -1.208292041881221 -0.9198758837973 1.4654766967631294
+  orientation -0.27373916698999434 0.760766206531166 0.5884739989632535 1.0975974200034668
+  position -4.1332817162540865 -1.9389818994023276 4.379212212470821
 }
 TexturedBackground {
 }
@@ -17,13 +18,67 @@ TexturedBackgroundLight {
 }
 RobotstadiumSoccerField {
 }
+QRIO {
+  translation -2.8850532215795286 0.05129894122982027 0.40781313526827373
+  rotation -0.0002771614301760152 -0.18493906599766 -0.9827499504194618 0.0030442566258844415
+  name "Obstacle robot(7)"
+  controller "<none>"
+}
+QRIO {
+  translation -0.6631499786510243 -1.197603662613069 0.40781313526820645
+  rotation 0.00028150120816601484 -4.049168851422735e-07 0.9999999603784521 3.1387189862820417
+  name "Obstacle robot(8)"
+  controller "<none>"
+}
+QRIO {
+  translation -4.089084449046762 -2.4714624358868234 0.4078131352680696
+  rotation 0.0002815214629425926 -0.0010568015755188288 0.9999994019578691 0.5206499960156682
+  name "Obstacle robot(6)"
+  controller "<none>"
+}
+QRIO {
+  translation 1.8900391327816597 -1.3198051729208304 0.4078131352542407
+  rotation 0.0002815020667523418 1.0526395861486854e-05 0.9999999603228898 -3.0668471748251362
+  name "Obstacle robot(5)"
+  controller "<none>"
+}
+QRIO {
+  translation -0.9840546795533018 0.8395739074915617 0.4078131352682295
+  rotation -0.0002815003860407854 -0.00027999727596422693 -0.999999921179526 1.5761561465475395
+  name "Obstacle robot(1)"
+  controller "<none>"
+}
+QRIO {
+  translation 3.485288976516837 0.35784750869669957 0.40781313526153323
+  rotation 0.0002815017377626819 7.944120354793843e-07 0.9999999603780695 -3.135927674867973
+  name "Obstacle robot"
+  controller "<none>"
+}
+QRIO {
+  translation 0.891978691659453 2.552207046165557 0.407813135268235
+  rotation -0.00028150183530188915 -0.0004859190564041942 -0.9999998423196812 1.0501446240494912
+  name "Obstacle robot(2)"
+  controller "<none>"
+}
+QRIO {
+  translation -4.126921495150496 2.4692367162116686 0.40781313526826013
+  rotation -0.0002744380618323191 -0.2203686264187958 -0.9754166254345081 0.0025548198826381182
+  name "Obstacle robot(3)"
+  controller "<none>"
+}
+QRIO {
+  translation -1.4027028250828986 -2.590897887457705 0.4078131352678523
+  rotation -0.0002405670276326167 -0.5216339397620133 -0.8531693706503214 0.0010793049253197688
+  name "Obstacle robot(4)"
+  controller "<none>"
+}
 Robot {
-  translation 0.02304018609361448 -7.644031221690336e-11 -0.0008956551827307424
-  rotation -8.199234881969475e-08 -0.9999999999672577 -8.091847532238627e-06 0.0006006831625976469
+  translation -1.32491 0.286747 0.000357429
+  rotation -0.0003065701197568495 -0.0010605404142836194 0.99999939063421 1.00697
   children [
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 1.295999994370923
+        position 192.22277342069452
         axis 0 1 0
         anchor 0 0 0.02
       }
@@ -39,8 +94,8 @@ Robot {
         }
       ]
       endPoint DEF EPUCK_LEFT_WHEEL Solid {
-        translation 0 0.025999999999999968 0.02
-        rotation 0 1 0 1.295999994370923
+        translation 0 0.02600000000000029 0.02
+        rotation 0 1 0 3.727214205306929
         children [
           DEF EPUCK_WHEEL Transform {
             rotation 1 0 0 -1.570796
@@ -176,7 +231,7 @@ Robot {
     }
     HingeJoint {
       jointParameters HingeJointParameters {
-        position 1.2959999943657818
+        position 180.15934324563915
         axis 0 1 0
         anchor 0 0 0.02
       }
@@ -192,8 +247,8 @@ Robot {
         }
       ]
       endPoint DEF EPUCK_RIGHT_WHEEL Solid {
-        translation 0 -0.02600000000000006 0.02
-        rotation 0 1 0 1.2959999943657816
+        translation 0 -0.02600000000000043 0.02
+        rotation 0 1 0 4.230154644610728
         children [
           Transform {
             rotation 1 0 0 3.14159
@@ -1594,21 +1649,55 @@ Robot {
   remoteControl "e-puck_bluetooth"
 }
 RobocupSoccerBall {
-  translation 0.209628 -0.07 0.0658835
-  rotation 0 -0.9999999999999999 0 0.005313164508736405
+  translation 1.3970309576665885 -2.421155021908502 0.08472892729855779
+  rotation 0.013619136522752174 -0.9998589879958737 -0.009824624381723358 1.2532167990202547
+  size 2
 }
 RobocupSoccerBall {
-  translation -0.24037 -0.38 0.0648752
-  rotation 0 -1 0 0.005313164508735291
+  translation 0.708543 -0.151465 0.0512848
+  rotation 0.6467004782996637 -0.5571342744854383 0.5209413513636354 1.9572087991518958
+  name "robocup soccer ball(4)"
+  size 2
+}
+RobocupSoccerBall {
+  translation -2.151183892342526 1.18 0.08472882194237376
+  rotation 0 -1 0 1.616606169841103
+  name "robocup soccer ball(5)"
+  size 2
+}
+RobocupSoccerBall {
+  translation 4.212754111403672 -2.580597528839744 0.0847289274103162
+  rotation -0.000258774908289344 0.9999909659906848 0.004242755303328012 -2.6916377364885653
+  name "robocup soccer ball(6)"
+  size 2
+}
+RobocupSoccerBall {
+  translation 0.809762 0.874905 0.0876555
+  rotation 0.18264382508367794 0.914030228536614 -0.36220156609284265 -2.9043226686164823
+  name "robocup soccer ball(7)"
+  size 2
+}
+RobocupSoccerBall {
+  translation 4.228503590343 2.7507188779303515 0.08472892729297153
+  rotation -0.005519508666381264 -0.9999706730793838 0.005309237727360681 1.4690429068797286
+  name "robocup soccer ball(8)"
+  size 2
+}
+RobocupSoccerBall {
+  translation -0.3404455545290614 2.2 0.08472883495059638
+  rotation 0 -1 0 1.4331836778237639
   name "robocup soccer ball(1)"
+  size 2
 }
 RobocupSoccerBall {
-  translation 0.159628 0.26 0.0677427
-  rotation 0 -1 0 0.005313164508737633
+  translation -1.7742770661964529 -1.1210668084067117 0.0847289272927951
+  rotation 0.007587157377148656 -0.9999362731747388 -0.008359702886379772 1.48562161825543
   name "robocup soccer ball(3)"
+  size 2
 }
 RobocupSoccerBall {
-  translation 0.4096280802170659 0.22 0.06774266685120472
-  rotation 0 -1 0 0.005313164508735291
+  translation 2.239661068360254 1.7743099751401916 0.08472892729389693
+  rotation -0.012977585467003096 -0.9998842572582048 0.007940677720124571 1.7238447449512693
   name "robocup soccer ball(2)"
+  size 2
 }
