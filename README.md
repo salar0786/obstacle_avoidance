@@ -3,5 +3,6 @@ This repository contains my project for the Robotics module at the University of
 Student name: Salar Jahan Wahlah
 Student ID: 22020447
 
-https://github.com/salar0786/obstacle_avoidance/assets/132213229/474b5aa4-6b25-4751-bb3e-2cd02b93950a
+https://github.com/salar0786/obstacle_avoidance/assets/132213229/bfffdc52-1271-4653-a8ba-cf1e7a4ded17
+
 
